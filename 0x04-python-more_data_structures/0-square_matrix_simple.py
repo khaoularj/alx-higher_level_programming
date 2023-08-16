@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    sqr = lambda x: x ** 2
+    def sqr(x):
+        return (x ** 2)
     res_matrix = []
     for row in matrix:
         sqr_row = list(map(sqr, row))

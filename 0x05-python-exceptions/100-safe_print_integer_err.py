@@ -8,6 +8,6 @@ def safe_print_integer_err(value):
         print(format_value)
         return True
     except Exception:
-        error_m = "Exception: {}".format((sys.exc_info()[1]), file=sys.stderr)
-        print(error_m)
+        error_m = "Exception: {}".format((sys.exc_info()[1]))
+        print(error_m, file=sys.stderr)
         return False

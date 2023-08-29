@@ -14,3 +14,4 @@ class Square:
             raise TypeError(type_error_msg)
         elif size < 0:
             raise ValueError(value_error_msg)
+        self.__size = size

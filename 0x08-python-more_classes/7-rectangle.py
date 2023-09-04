@@ -19,7 +19,6 @@ class Rectangle:
         self.height = height
         type(self).number_of_instances += 1
 
-
     @property
     def width(self):
         """set the width of the rectangle."""
@@ -69,7 +68,8 @@ class Rectangle:
             return ("")
         rectangle = []
         for element in range(self.__height):
-            [rectangle.append(str(self.print_symbol)) for items in range(self.__width)]
+            [rectangle.append(str(self.print_symbol))
+                for items in range(self.__width)]
             if element != self.__height - 1:
                 rectangle.append("\n")
         return ("".join(rectangle))

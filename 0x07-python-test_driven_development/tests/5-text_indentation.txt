@@ -1,0 +1,19 @@
+def text_indentation(text)
+-----------------------
+
+this function prints a text with 2 new lines after each of these characters: ., ? and :
+
+Usage Example:
+-------------
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("python")
+python
+
+>>> text_indentation("hello there.")
+hello there.
+<BLANKLINE>
+
+>>> text_indentation("how are you?")
+how are you?
+<BLANKLINE>

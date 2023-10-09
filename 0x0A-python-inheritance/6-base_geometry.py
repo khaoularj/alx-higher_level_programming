@@ -4,8 +4,6 @@
 
 class BaseGeometry:
     """this is the new class"""
-
-
     def area(self):
         msg = "area() is not implemented"
         raise Exception(msg)

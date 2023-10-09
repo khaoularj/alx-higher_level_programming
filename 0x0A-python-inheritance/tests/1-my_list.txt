@@ -17,3 +17,51 @@ MyList = __import__('1-my_list').MyList
 [1, 2, 3, 4, 5]
 >>>print(my_list)
 [1, 4, 2, 3, 5]
+
+----------------------------------------
+
+in case of a list with four numbers
+
+>>> list_1 = [2, 7, 3, 1]
+>>> my_list = MyList(list_1)
+>>> my_list.print_sorted()
+[1, 2, 3, 7]
+
+----------------------------------------
+in case it's an empty list
+
+>>> list_1 = []
+>>> my_list = MyList(list_1)
+>>> my_list.print_sorted()
+[]
+
+----------------------------------------
+
+in case of a list with one number
+
+>>> list_1 = [2]
+>>> my_list = MyList(list_1)
+>>> my_list.print_sorted()
+[2]
+
+----------------------------------------
+
+in case of a list with same numbers
+
+>>> list_1 = MyList()
+>>> list_1.append(2)
+>>> list_1.append(2)
+>>> list_1.append(2)
+>>> list_1.print_sorted()
+[2, 2, 2]
+
+----------------------------------
+
+in case of a mix of negative and positive numbers
+
+>>> list_1 = MyList()
+>>> list_1.append(2)
+>>> list_1.append(-4)
+>>> list_1.append(-1)
+>>> list_1.print_sorted()
+[-4, -1, 2]

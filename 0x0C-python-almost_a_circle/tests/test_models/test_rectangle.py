@@ -5,7 +5,6 @@ from models.base import Base
 from models.rectangle import Rectangle
 
 
-
 class TestRectangleInsta(unittest.TestCase):
     """unit test for the rectangle class instantaion"""
     def test_unique_args(self):

@@ -26,18 +26,22 @@ class TestBase_Insta(unittest.TestCase):
         b1 = Base(12)
         self.assertEqual(b1.id, 12)
 
+
 class TestBase_to_json(unittest.TestCase):
     """unit test for testing to_json_string"""
     def test_to_jsoon_string_rectangle(self):
         rec = Rectangle(10, 7, 2, 8)
         self.assertEqual(str, type(Base.to_json_string([rec.to_dictionary()])))
 
+
 class TestBase_from_json(unittest.TestCase):
-        """unit test for testing from_json_string"""
-        def test_from_json_rectangle(self):
-            list_in = [{"width": 10, "height": 5, "id": 16}]
-            json_list_in = Rectangle.to_json_string(list_in)
-            list_out = Rectangle.from_json_string(json_list_in)
-            self.assertEqual(list_in, list_out)
+    """unit test for testing from_json_string"""
+    def test_from_json_rectangle(self):
+        list_in = [{"width": 10, "height": 5, "id": 16}]
+        json_list_in = Rectangle.to_json_string(list_in)
+        list_out = Rectangle.from_json_string(json_list_in)
+        self.assertEqual(list_in, list_out)
+
+
 if __name__ == "__main__":
     unittest.main()

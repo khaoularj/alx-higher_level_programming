@@ -50,9 +50,8 @@ class Base:
             if list_objs is None:
                 json_file.write("[]")
             else:
-                dicts_obj = []
                 for objects in list_objs:
-                    dicts_obj.append(objects.to_dictionary())
+                    dicts_obj = objects.to_dictionary()
                     json_fl = json.dumps(dicts_obj)
 
     @staticmethod

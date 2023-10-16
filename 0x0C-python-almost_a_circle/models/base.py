@@ -25,7 +25,7 @@ class Base:
             list_dictionaries: is a list of dictionaries
         Return: the JSON serialization of a list_dictionaries"""
         if len(list_dictionaries) == 0 or list_dictionaries is None:
-            return []
+            return "[]"
         encod_json = json.dumps(list_dictionaries)
         return encod_json
 

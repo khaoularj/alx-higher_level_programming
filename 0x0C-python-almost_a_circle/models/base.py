@@ -47,8 +47,8 @@ class Base:
                 dicts_obj.append(objects.to_dictionary())
                 json_fl = json.dumps(dicts_obj)
 
-        with open(f_name, "w") as json_file:
-            json_file.write(json_fl)
+        """with open(f_name, "w") as json_file:
+            json_file.write(json_fl)"""
 
     @staticmethod
     def from_json_string(json_string):

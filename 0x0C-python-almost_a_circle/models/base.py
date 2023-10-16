@@ -44,7 +44,7 @@ class Base:
         """dicts_obj = []
         for objects in list_objs:"""
             else:
-                dicts_obj.append(objects.to_dictionary())
+                dicts_obj = [objects.to_dictionary()) for objects in list_objs]
                 json_fl = json.dumps(dicts_obj)
 
         """with open(f_name, "w") as json_file:

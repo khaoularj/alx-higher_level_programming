@@ -41,10 +41,11 @@ class Base:
         with open(f_name, "w") as json_file:
             if list_objs is None:
                 json_file.write("[]")
-        dicts_obj = []
-        for objects in list_objs:
-            dicts_obj.append(objects.to_dictionary())
-        json_fl = json.dumps(dicts_obj)
+        """dicts_obj = []
+        for objects in list_objs:"""
+            else:
+                dicts_obj.append(objects.to_dictionary())
+                json_fl = json.dumps(dicts_obj)
 
         with open(f_name, "w") as json_file:
             json_file.write(json_fl)

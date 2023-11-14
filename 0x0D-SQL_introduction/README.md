@@ -1,0 +1,2 @@
+0x0D. SQL - Introduction
+is a programming language specifically designed for managing and manipulating data held in a relational database management system (RDBMS) or for stream processing in a relational data stream management system (RDSMS). SQL allows users to define, manipulate, and query the data stored in a database. It provides a standardized way to interact with relational databases and perform tasks such as creating and modifying database schemas, inserting, updating, and deleting records, and retrieving data from the database.

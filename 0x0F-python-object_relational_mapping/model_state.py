@@ -11,4 +11,4 @@ class State(Base):
     """this is the class State"""
     __tablename__ = 'states'
     id = Column(Integer, nullable=False, primary_key=True, unique=True)
-    name = Column(String(128),nullable=False)
+    name = Column(String(128), nullable=False)
